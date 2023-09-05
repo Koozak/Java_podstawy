@@ -38,20 +38,14 @@ public class Main {
         int roznica = wylosowana > wpisana ? wylosowana - wpisana : wpisana - wylosowana;
         //całokowita z dzieleniea
         roznica = roznica/10;
-        switch (roznica) {
-            case 0:
-                System.out.println("bardzo blisko");
-                break;
-            case 1:
-                System.out.println("całkiem nieżle");
-                break;
-            case 2:
-                System.out.println("trochę blisko");
-                break;
-            default:
-                System.out.println("spróbuj ponownie");
+            System.out.println(
+                    switch (roznica) {
+                        case 0 -> "było blisko";
+                        case 1 -> "całkiem nieżle";
+                        default -> "sprubuj ponownie";
+                    }
+                );
 
-        }
+            }
         }
     }
-}
