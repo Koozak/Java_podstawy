@@ -24,10 +24,11 @@ public class Main {
         //rzutowanie zawężające
         //z liczby która zajmuje więcej miejsca w pamieci robię liczbę ktora zajmuje miej miejsca w pamięci
         //System.out.println(wylosowana);
-        for(int i = 0; i<10;i++) {
-            System.out.println("podaj liczbę całkowitą z zakresu 1,100");
-            Scanner klawiatura = new Scanner(System.in);
-            int wpisana;
+        System.out.println("podaj liczbę całkowitą z zakresu 1,100");
+        Scanner klawiatura = new Scanner(System.in);
+        int wpisana;
+        wpisana = klawiatura.nextInt();
+        while(wpisana != wylosowana) {
             wpisana = klawiatura.nextInt();
             if (wpisana == wylosowana) {
                 System.out.println("wygrałeś");
