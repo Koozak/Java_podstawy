@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     //Nazwa pliku taka sama jak nazwa klasy, Nazwa klasy dużą literą
     /*public static void main(String[] args) {
@@ -22,5 +24,9 @@ public class Main {
         //rzutowanie zawężające
         //z liczby która zajmuje więcej miejsca w pamieci robię liczbę ktora zajmuje miej miejsca w pamięci
         System.out.println(wylosowana);
+        System.out.println("podaj liczbę całkowitą z zakresu 1,100");
+        Scanner klawiatura = new Scanner(System.in);
+        int wpisana;
+        wpisana = klawiatura.nextInt();
     }
 }
