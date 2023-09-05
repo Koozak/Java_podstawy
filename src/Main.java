@@ -18,7 +18,7 @@ public class Main {
          */
         System.out.println("Pierwszy program");
         System.out.println("wylosowanie jednej liczby z zakresu od 1 do 100");
-        double wylosowana =(int) (Math.random()*100+1);//  Math.random() losowanie z zakresu <0,1)
+        int wylosowana =(int) (Math.random()*100+1);//  Math.random() losowanie z zakresu <0,1)
         //typy proste int,double,float,boolean,char
         //zmienne tych typów nie są obiektami
         //rzutowanie zawężające
@@ -33,6 +33,25 @@ public class Main {
         }
         else{
             System.out.println("nie udało sie");
+
+        //wyrażenie warunkowe
+        int roznica = wylosowana > wpisana ? wylosowana - wpisana : wpisana - wylosowana;
+        //całokowita z dzieleniea
+        roznica = roznica/10;
+        switch (roznica) {
+            case 0:
+                System.out.println("bardzo blisko");
+                break;
+            case 1:
+                System.out.println("całkiem nieżle");
+                break;
+            case 2:
+                System.out.println("trochę blisko");
+                break;
+            default:
+                System.out.println("spróbuj ponownie");
+
+        }
         }
     }
 }
