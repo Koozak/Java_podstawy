@@ -28,5 +28,11 @@ public class Main {
         Scanner klawiatura = new Scanner(System.in);
         int wpisana;
         wpisana = klawiatura.nextInt();
+        if(wpisana == wylosowana){
+            System.out.println("wygrałeś");
+        }
+        else{
+            System.out.println("nie udało sie");
+        }
     }
 }
