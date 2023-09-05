@@ -16,9 +16,11 @@ public class Main {
          */
         System.out.println("Pierwszy program");
         System.out.println("wylosowanie jednej liczby z zakresu od 1 do 100");
-        double wylosowana = Math.random()*100+1;//  Math.random() losowanie z zakresu <0,1)
+        double wylosowana =(int) (Math.random()*100+1);//  Math.random() losowanie z zakresu <0,1)
         //typy proste int,double,float,boolean,char
         //zmienne tych typów nie są obiektami
+        //rzutowanie zawężające
+        //z liczby która zajmuje więcej miejsca w pamieci robię liczbę ktora zajmuje miej miejsca w pamięci
         System.out.println(wylosowana);
     }
 }
